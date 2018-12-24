@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/birthdayImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/birthdaypicture" />
+
+
+    <TextView
+        android:id="@+id/birthdayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/birthdayImage"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:text="Happy Birthday!!"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/fromText"
+        android:text="From Ruchs"
+        android:layout_alignBottom="@+id/birthdayImage"
+        android:layout_marginBottom="0dp"
+        android:layout_centerInParent="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
